@@ -1,7 +1,7 @@
 const http = require("http");
 
-const PORT = 3000;
-const HOST = "localhost";
+const PORT = process.env.PORT || 3000;
+const HOST = 'localhost';
 
 const server = http.createServer((req, res) => {
   // السطر ده بيطبع في الـ Terminal كل Request بيوصل للسيرفر (بيسموه Logging)
