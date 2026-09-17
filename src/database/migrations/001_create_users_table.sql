@@ -1,7 +1,5 @@
--- تفعيل إضافة الـ UUID في PostgreSQL
 CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 
--- إنشاء جدول المستخدمين
 CREATE TABLE users (
     id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
     full_name VARCHAR(100) NOT NULL,
